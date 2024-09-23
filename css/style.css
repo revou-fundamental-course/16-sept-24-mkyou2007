@@ -1,1 +1,172 @@
-/* css */
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #1d1d1d;
+}
+
+
+/* header dan navbar */
+
+header {
+  background-color: #333;
+}
+
+.header{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+.navigation-bar{
+ 
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+   
+    
+}
+
+
+
+.logo{
+  padding: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+  border-radius: 50% ;
+  object-fit: cover;
+  
+}
+
+.judul:hover {
+    color: #ccc;
+    transition:  1s ease-in-out;
+   
+    
+}
+
+.section-logo{
+  display: flex;
+  align-items: center;
+}
+
+.navbar{
+  font-size: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+color   :black;
+text-decoration: none;
+font-family: sans-serif;
+position: relative;
+
+}
+
+.navbar:hover{
+    color: #004AAD;
+    transition:  1s   ease-in-out;
+    background-color: rgb(121, 10, 10);
+    border: 2px solid black;
+    border-radius: 40%;
+}
+
+.navbar::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #004AAD;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+/* header dan navbar end */
+
+/* content-slideshow */
+
+.slideshow{
+  display: flex;
+  width: 100%;
+  transition: 2s;
+}
+
+.slideshow img{
+  width: 100%;
+}
+
+.container-slideshow{
+  width: 700px;
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#slide-1:target ~ .slideshow {
+  margin-left: 0px;
+}
+#slide-2:target ~ .slideshow {
+  margin-left: -100%;
+}
+#slide-3:target ~ .slideshow {
+  margin-left: -200%;
+}
+/* content-slideshow end */
+
+/* navigation slideshow */
+.nav-slide a{
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: antiquewhite;
+  font-size: 0px;
+  border-radius: 50%;
+  transition: 1s;
+  border: 1px solid #3f3f3f ;
+}
+.nav-slide a:hover{
+  background-color: #3f3f3f;
+}
+
+.nav-slide{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin-top: -50px;
+ 
+}
+
+@media screen and (max-width:800px) {
+
+
+  .nav-slide{
+    width: 90%;
+
+}
+
+.logo{
+  width: 70px;
+  height: 70px;
+}
+
+.navbar{
+  font-size: 70%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.section-logo{
+  padding-right: 2rem;
+}
+
+
+}

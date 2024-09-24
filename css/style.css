@@ -13,7 +13,7 @@ body{
 /* header dan navbar */
 
 header {
-  background-color: #333;
+  background-color: #6e6e6e;
 }
 
 .header{
@@ -91,6 +91,11 @@ position: relative;
 
 /* content-slideshow */
 
+.slide-content{
+ 
+  background-image: url('assets/anim.jpg');
+}
+
 .slideshow{
   display: flex;
   width: 100%;
@@ -120,6 +125,7 @@ position: relative;
 /* content-slideshow end */
 
 /* navigation slideshow */
+
 .nav-slide a{
   display: inline-block;
   height: 20px;
@@ -169,4 +175,72 @@ position: relative;
 }
 
 
+}
+/* navigation slideshow end */
+
+.form-container {
+  max-width: 400px; /* set a maximum width for the form */
+  margin: 40px auto; /* add margin to center the form */
+  padding: 30px; /* add padding to create space inside the form */
+  background-color: #f9f9f9; /* add a background color to the form */
+  border: 1px solid #ccc; /* add a border to the form */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow to the form */
+}
+
+
+
+.form{
+  background-color:  #f0f0f0;
+  padding: 3rem;
+  margin: auto;
+
+}
+
+label {
+  display: block; /* make labels block-level elements */
+  margin-bottom: 10px; /* add margin between labels */
+}
+
+input, textarea, select {
+  width: 100%; /* make inputs full-width */
+  padding: 10px; /* add padding to inputs */
+  margin-bottom: 20px; /* add margin between inputs */
+  border: 1px solid #ccc; /* add a border to inputs */
+}
+
+/* Style the submit button */
+button[type="submit"] {
+  background-color: #4CAF50; /* add a background color to the submit button */
+  color: #fff; /* add text color to the submit button */
+  padding: 10px 20px; /* add padding to the submit button */
+  border: none; /* remove border from the submit button */
+  border-radius: 5px; /* add a rounded corner to the submit button */
+  cursor: pointer; /* add a pointer cursor to the submit button */
+}
+
+/* Add some basic responsive styling */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 20px auto;
+  }
+  input, textarea, select {
+    width: 90%; /* make inputs slightly smaller on smaller screens */
+  }
+}
+
+
+.info-box {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.info-box h2 {
+  margin-top: 0;
+}
+
+.info-box p {
+  margin-bottom: 10px;
 }

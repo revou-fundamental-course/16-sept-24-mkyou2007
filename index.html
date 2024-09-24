@@ -28,6 +28,7 @@
     </nav>
   </header>
   <!-- bagian header end -->
+
   <!-- main content -->
   <main>
     <!-- slideshow content -->
@@ -50,19 +51,44 @@
           <a href="#slide-3">3</a>
         </div>
       </div>
-
     </section>
-
-    <section>
-
-        
-      
-    </section>
-
-
-
     <!-- slideshow content end -->
 
+    <section class="form">
+      <h1>HI <span id="name">user</span> welcome to my website</h1>
+      <p>i hope you can enjoy my website</p>
+      <div class="form-container">
+        <form id="myForm">
+          <div>
+            <label for="input-name">Nama Anda</label>
+            <input type="text" name="name" id="input-name">
+          </div>
+          <div>
+            <label for="input-date">Tanggal Lahir</label>
+            <input type="date" name="date" id="input-date">
+          </div>
+          <div>
+            <label for="input-gender">Jenis Kelamin</label>
+            <select name="gender" id="input-gender">
+              <option value="laki-laki">Laki-laki</option>
+              <option value="perempuan">Perempuan</option>
+            </select>
+          </div>
+          <div>
+            <label for="input-message">Pesan Anda</label>
+            <textarea name="message" id="input-message" placeholder="Kirim Pesan" rows="5" cols="30"></textarea>
+          </div>
+          <button id="submit" class="button">Submit</button>
+        </form>
+        <div class="info-box">
+          <h2>Information:</h2>
+          <p id="info-name"></p>
+          <p id="info-date"></p>
+          <p id="info-gender"></p>
+          <p id="info-message"></p>
+        </div>
+      </div>
+    </section>
 
   </main>
   <!-- main content end -->
@@ -71,6 +97,7 @@
 
   </footer>
   <!-- footer end -->
+  <script src="js/js.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,38 @@
-  
+
+// Get the slideshow element
+const slideshow = document.getElementById('slideshow');
+
+// Get the images in the slideshow
+const images = slideshow.children;
+
+// Set the current image index
+let currentIndex = 0;
+
+// Set the slideshow interval (in milliseconds)
+const interval = 3000; // 3 seconds
+
+// Function to show the next image
+function nextImage() {
+  // Hide the current image
+  images[currentIndex].style.display = 'none';
+
+  // Increment the current index
+  currentIndex++;
+
+  // If we've reached the end of the slideshow, go back to the start
+  if (currentIndex >= images.length) {
+    currentIndex = 0;
+  }
+
+  // Show the next image
+  images[currentIndex].style.display = 'block';
+}
+
+// Start the slideshow
+setInterval(nextImage, interval);
+
+
+
 const form = document.getElementById('myForm');
 const infoBox = document.getElementById('info-box');
 const infoName = document.getElementById('info-name');
@@ -23,42 +57,41 @@ form.addEventListener('submit', (e) => {
 });
 
 
-  // Function to reset the form
-  function resetForm() {
-    document.getElementById("myForm").reset();
-    document.getElementById("info-name").innerHTML = "";
-    document.getElementById("info-date").innerHTML = "";
-    document.getElementById("info-gender").innerHTML = "";
-    document.getElementById("info-message").innerHTML = "";
-  }
+// Function to reset the form
+function resetForm() {
+  document.getElementById("myForm").reset();
+  document.getElementById("info-name").innerHTML = "";
+  document.getElementById("info-date").innerHTML = "";
+  document.getElementById("info-gender").innerHTML = "";
+  document.getElementById("info-message").innerHTML = "";
+}
 
-  // Function to replace the "user" text with the inputted name
-  function updateUserName() {
-    var userName = document.getElementById("input-name").value;
-    document.getElementById("name").innerHTML = userName;
-  }
+// Function to replace the "user" text with the inputted name
+function updateUserName() {
+  var userName = document.getElementById("input-name").value;
+  document.getElementById("name").innerHTML = userName;
+}
 
-  // Add event listener to the submit button
-  document.getElementById("submit").addEventListener("click", function(event) {
-    event.preventDefault();
-    var formData = new FormData(document.getElementById("myForm"));
-    var userName = formData.get("name");
-    var userDate = formData.get("date");
-    var userGender = formData.get("gender");
-    var userMessage = formData.get("message");
 
-    document.getElementById("info-name").innerHTML = "Nama: " + userName;
-    document.getElementById("info-date").innerHTML = "Tanggal Lahir: " + userDate;
-    document.getElementById("info-gender").innerHTML = "Jenis Kelamin: " + userGender;
-    document.getElementById("info-message").innerHTML = "Pesan: " + userMessage;
+// Add event listener to the submit button
+document.getElementById("submit").addEventListener("click", function (event) {
+  event.preventDefault();
+  var formData = new FormData(document.getElementById("myForm"));
+  var userName = formData.get("name");
+  var userDate = formData.get("date");
+  var userGender = formData.get("gender");
+  var userMessage = formData.get("message");
 
-    updateUserName();
-  });
+  document.getElementById("info-name").innerHTML = "Nama: " + userName;
+  document.getElementById("info-date").innerHTML = "Tanggal Lahir: " + userDate;
+  document.getElementById("info-gender").innerHTML = "Jenis Kelamin: " + userGender;
+  document.getElementById("info-message").innerHTML = "Pesan: " + userMessage;
 
-  // Add event listener to the reset button
-  var resetButton = document.createElement("button");
-  resetButton.innerHTML = "Reset";
-  resetButton.onclick = resetForm;
-  document.body.appendChild(resetButton);
+  updateUserName();
+});
+
+// Add event listener to the reset button
+var resetButton = document.getElementById("reset").addEventListener("click", resetForm);
+
 
 

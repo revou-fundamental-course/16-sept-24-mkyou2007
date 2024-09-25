@@ -6,7 +6,7 @@ html{
 
 
 body{
-    background-color: #1d1d1d;
+ background-color: #3f3f3f;
 }
 
 
@@ -24,14 +24,6 @@ header {
  
 }
 
-.navigation-bar{
- 
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-   
-    
-}
 
 
 
@@ -45,19 +37,9 @@ header {
   
 }
 
-.judul:hover {
-    color: #ccc;
-    transition:  1s ease-in-out;
-   
-    
-}
-
-.section-logo{
-  display: flex;
-  align-items: center;
-}
 
 .navbar{
+  font-weight: 700;
   font-size: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -76,24 +58,17 @@ position: relative;
     border-radius: 40%;
 }
 
-.navbar::before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: #004AAD;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
 /* header dan navbar end */
 
 /* content-slideshow */
 
 .slide-content{
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+  background-image: url('/assets/7.jpg');
  
-  background-image: url('assets/anim.jpg');
+  
 }
 
 .slideshow{
@@ -102,56 +77,33 @@ position: relative;
   transition: 2s;
 }
 
+
 .slideshow img{
   width: 100%;
+  height: auto;
+  border-radius: 5%;
+ 
+  
 }
 
 .container-slideshow{
   width: 700px;
   margin: auto;
-  border-radius: 5px;
   overflow: hidden;
+  object-fit: cover;
 }
 
-#slide-1:target ~ .slideshow {
-  margin-left: 0px;
-}
-#slide-2:target ~ .slideshow {
-  margin-left: -100%;
-}
-#slide-3:target ~ .slideshow {
-  margin-left: -200%;
-}
 /* content-slideshow end */
 
 /* navigation slideshow */
 
-.nav-slide a{
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  background-color: antiquewhite;
-  font-size: 0px;
-  border-radius: 50%;
-  transition: 1s;
-  border: 1px solid #3f3f3f ;
-}
-.nav-slide a:hover{
-  background-color: #3f3f3f;
-}
-
-.nav-slide{
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
-  text-align: center;
-  margin-top: -50px;
- 
-}
-
 @media screen and (max-width:800px) {
+
+  .header{
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+  }
 
 
   .nav-slide{
@@ -165,28 +117,42 @@ position: relative;
 }
 
 .navbar{
-  font-size: 70%;
-  padding-left: 5px;
-  padding-right: 5px;
+  font-size: 80%;
+  font-weight: 700;
+  
 }
 
 .section-logo{
   padding-right: 2rem;
 }
 
+.form-container{
+  display: grid;
+
+}
+
 
 }
 /* navigation slideshow end */
 
+
+/* form content */
 .form-container {
-  max-width: 400px; /* set a maximum width for the form */
-  margin: 40px auto; /* add margin to center the form */
-  padding: 30px; /* add padding to create space inside the form */
-  background-color: #f9f9f9; /* add a background color to the form */
-  border: 1px solid #ccc; /* add a border to the form */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* add a subtle shadow to the form */
+  max-width: 700px; 
+  margin: 40px auto;
+  padding: 50px; 
+  background-color: #f9f9f9; 
+  border: 1px solid #ccc; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: space-around;
 }
 
+
+.font-welcome{
+  font-size: 1.5rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 .form{
@@ -197,44 +163,65 @@ position: relative;
 }
 
 label {
-  display: block; /* make labels block-level elements */
-  margin-bottom: 10px; /* add margin between labels */
+  display: block; 
+  margin-bottom: 10px; 
 }
 
 input, textarea, select {
-  width: 100%; /* make inputs full-width */
-  padding: 10px; /* add padding to inputs */
-  margin-bottom: 20px; /* add margin between inputs */
-  border: 1px solid #ccc; /* add a border to inputs */
+  width: 100%; 
+  padding: 10px; 
+  margin-bottom: 20px; 
+  border: 1px solid #ccc; 
 }
 
 /* Style the submit button */
 button[type="submit"] {
-  background-color: #4CAF50; /* add a background color to the submit button */
-  color: #fff; /* add text color to the submit button */
-  padding: 10px 20px; /* add padding to the submit button */
-  border: none; /* remove border from the submit button */
-  border-radius: 5px; /* add a rounded corner to the submit button */
-  cursor: pointer; /* add a pointer cursor to the submit button */
+  background-color: #4CAF50; 
+  color: #fff; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
 }
 
-/* Add some basic responsive styling */
+
 @media (max-width: 600px) {
-  .form-container {
-    margin: 20px auto;
+
+  .header{
+    justify-content: space-evenly;
+    margin: 0 auto;
+
   }
+
+  .navbar{
+
+  }
+
+  .form-container {
+    max-width: 600px; 
+    margin: 40px auto;
+    padding: 20px; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+   display:grid;
+  }
+
+
+ 
   input, textarea, select {
-    width: 90%; /* make inputs slightly smaller on smaller screens */
+    width: 90%; 
   }
 }
 
 
 .info-box {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  
 }
 
 .info-box h2 {
@@ -244,3 +231,4 @@ button[type="submit"] {
 .info-box p {
   margin-bottom: 10px;
 }
+/* form content 1 end */

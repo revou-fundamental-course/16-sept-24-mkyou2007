@@ -4,20 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1,0">
   <title>belajar revou</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <!-- bagian header -->
   <header>
+
     <nav class="header">
-      <section class="section-logo">
+     
         <div>
           <img src="assets/anim.jpg" alt="" class="logo">
         </div>
-      </section>
+     
 
       <section class="navigation_bar">
         <a href="#" class="navbar">HOME</a>
@@ -26,47 +27,61 @@
         <a href="#" class="navbar">MASSAGE US</a>
       </section>
     </nav>
+
   </header>
+
   <!-- bagian header end -->
 
   <!-- main content -->
+
   <main>
+
     <!-- slideshow content -->
 
     <section class="slide-content">
       <div class="container-slideshow">
-        <div class="slides">
-          <span id="slide-1"></span>
-          <span id="slide-2"></span>
-          <span id="slide-3"></span>
-          <div class="slideshow">
-            <img src="assets/1.webp" alt="image 1">
-            <img src="assets/2.png" alt="image 1">
-            <img src="assets/4.jpeg" alt="image 1">
-          </div>
-        </div>
-        <div class="nav-slide">
-          <a href="#slide-1">1</a>
-          <a href="#slide-2">2</a>
-          <a href="#slide-3">3</a>
+        <div class="slideshow" id="slideshow">
+          <img src="assets/4.jpeg" alt="image 1">
+          <img src="assets/2.png" alt="image 2">
+          <img src="assets/4.jpeg" alt="image 3">
         </div>
       </div>
+
+
+      </div>
     </section>
+
     <!-- slideshow content end -->
 
-    <section class="form">
-      <h1>HI <span id="name">user</span> welcome to my website</h1>
-      <p>i hope you can enjoy my website</p>
+   
+
+    <!-- content 1 -->
+    <div>
+    <h1>PORTOFOLIO</h1>
+
+
+    </div>
+    <!-- content 1 end -->
+
+     <!-- form content -->
+
+     <section class="form">
+      <div class="font-welcome">
+        <h1>HI <span id="name">User</span> welcome to my website</h1>
+        <p>i hope you can enjoy my website</p>
+      </div>
       <div class="form-container">
         <form id="myForm">
           <div>
             <label for="input-name">Nama Anda</label>
             <input type="text" name="name" id="input-name">
           </div>
+
           <div>
             <label for="input-date">Tanggal Lahir</label>
             <input type="date" name="date" id="input-date">
           </div>
+
           <div>
             <label for="input-gender">Jenis Kelamin</label>
             <select name="gender" id="input-gender">
@@ -74,21 +89,30 @@
               <option value="perempuan">Perempuan</option>
             </select>
           </div>
+
           <div>
             <label for="input-message">Pesan Anda</label>
             <textarea name="message" id="input-message" placeholder="Kirim Pesan" rows="5" cols="30"></textarea>
           </div>
+
           <button id="submit" class="button">Submit</button>
         </form>
+
         <div class="info-box">
           <h2>Information:</h2>
           <p id="info-name"></p>
           <p id="info-date"></p>
           <p id="info-gender"></p>
           <p id="info-message"></p>
+          <button id="reset">Reset</button>
         </div>
+
+
+
+
       </div>
     </section>
+    <!-- form content end -->
 
   </main>
   <!-- main content end -->

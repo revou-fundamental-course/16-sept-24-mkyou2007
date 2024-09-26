@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE-edge" />
   <title>belajar revou</title>
+  <link rel="icon" href="assets/735290_poster.jpg">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,9 +19,9 @@
 
       <section class="navigation_bar">
         <a href="#" class="navbar">HOME</a>
-        <a href="" class="navbar">ABOUT US</a>
+        <a href="#section-1 " class="navbar">ABOUT US</a>
         <a href="#" class="navbar">PORTOFOLIO</a>
-        <a href="#" class="navbar">MASSAGE US</a>
+        <a href="#contac" class="navbar">MASSAGE US</a>
       </section>
     </nav>
 
@@ -55,7 +56,7 @@
 
 
     <!-- content 1 -->
-    <section class="content1-section">
+    <section class="content1-section" id="section-1">
       <div class="h1-content1">
         <h1>ABOUT US</h1>
         <p>here's something about me ;]</p>
@@ -88,17 +89,95 @@
       </div>
       <hr>
     </section>
-    
+
     <!-- content 1 end -->
+
+    <!-- content 2 -->
+    <section class="content2-section" id="section-2">
+      <h1>Why you should watch <span class="breaking">BREAKING</span> <span class="bad">BAD</span></h1>
+
+      <article>
+        <h2>5 Reasons to Get Hooked on Breaking Bad</h2>
+        <p>Breaking Bad is a critically acclaimed TV series that will keep you on the edge of your seat. But what makes
+          it so special? Let's dive in and find out!</p>
+        <hr>
+
+        <!-- Interactive Slider -->
+        <div class="slider-container">
+          <div class="radio">
+            <input type="radio" id="slide-1" name="slide" checked>
+            <input type="radio" id="slide-2" name="slide">
+            <input type="radio" id="slide-3" name="slide">
+            <input type="radio" id="slide-4" name="slide">
+            <input type="radio" id="slide-5" name="slide">
+          </div>
+
+          <div class="slider">
+            <div class="slide" id="slide-1-content">
+              <h3>Incredible Acting</h3>
+              <p>Bryan Cranston's portrayal of Walter White is phenomenal. <br> He transforms from a mild-mannered
+                chemistry
+                teacher into <br> a ruthless drug kingpin, and his performance is captivating.</p>
+              <img src="assets/Bryan Cranston.jpeg" alt="Bryan Cranston as Walter White">
+            </div>
+
+            <div class="slide" id="slide-2-content">
+              <h3>Compelling Storyline</h3>
+              <p>The plot is intense and full of suspense. <br>
+                It keeps you on the edge of your seat with <br> unexpected twists
+                and cliffhangers.</p>
+              <img src="assets/Breaking Bad - S1E1 - Pilot.jpeg" alt="Breaking Bad storyline">
+            </div>
+
+            <div class="slide" id="slide-3-content">
+              <h3>Complex Characters</h3>
+              <p>The characters are well-developed and <br> multi-dimensional. <br> You'll find yourself empathizing
+                with them,
+                even <br>when they make questionable decisions.</p>
+              <img src="assets/caracter.jpeg" alt="Breaking Bad characters">
+            </div>
+
+            <div class="slide" id="slide-4-content">
+              <h3>High-Quality Production</h3>
+              <p>The cinematography, direction, <br> and writing are top-notch. The show is visually <br> stunning and
+                the
+                dialogue is sharp and memorable.</p>
+              <img src="assets/heisenberg.jpeg" alt="Breaking Bad production">
+            </div>
+
+            <div class="slide" id="slide-5-content">
+              <h3>Memorable Villains</h3>
+              <p>The show features some of the most chilling <br> villains on TV, from the unpredictable <br> Tuco
+                Salamanca to
+                the calculating Gus Fring.</p>
+              <img src="assets/gusfring.jpeg" alt="Breaking Bad villains">
+            </div>
+          </div>
+
+          <!-- Slider Navigation -->
+
+          <div class="slider-nav">
+            <label for="slide-1">1</label>
+            <label for="slide-2">2</label>
+            <label for="slide-3">3</label>
+            <label for="slide-4">4</label>
+            <label for="slide-5">5</label>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- content 2 end -->
+
 
     <!-- form content -->
 
-    <section class="form">
+    <section class="form" id="contac">
       <div>
-        <h1>CONTACT US</h1>
+        <h1 class="h1-form">CONTACT US</h1>
         <hr>
         <p>Yo Yo Yo 1-4-8 3 to the 3 to the 6 to the 9. Representing the ABQ.
-          <BR> What up BIATCH! Leave at the tone.</p>
+          <BR> What up BInchINTA ! Leave at the tone.
+        </p>
       </div>
       <!-- Form Container -->
       <div class="form-container">
@@ -149,8 +228,30 @@
   <!-- main content end -->
   <!-- footer -->
   <footer>
-
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="/about">Our Story</a></li>
+          <li><a href="/team">Team</a></li>
+          <li><a href="/careers">Careers</a></li>
+        </ul>
+      </div>
+     
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul class="social-icons">
+          <li><a href="https://facebook.com">Facebook</a></li>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://www.instagram.com/whatthe_muffins/">Instagram</a></li>
+        </ul>
+      </div>
+     
+    <div class="footer-bottom">
+      <p>© 2024 Your Company. i am not in danger skyler . i am the danger.</p>
+    </div>
   </footer>
+  
   <!-- footer end -->
   <script src="js/js.js"></script>
 </body>

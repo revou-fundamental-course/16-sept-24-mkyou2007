@@ -30,9 +30,6 @@ function nextImage() {
 // Start the slideshow
 setInterval(nextImage, interval);
 
-
-
-
 const form = document.getElementById('myForm');
 const nameInput = document.getElementById('input-name');
 const dateInput = document.getElementById('input-date');
@@ -116,3 +113,19 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+
+// <!-- JavaScript to handle slider logic -->
+
+  const sliderContainer = document.querySelector('.slider-container');
+  const sliderNav = document.querySelector('.slider-nav');
+  const slides = document.querySelectorAll('.slide');
+
+  sliderNav.addEventListener('click', (e) => {
+    if (e.target.tagName === 'LABEL') {
+      const slideId = e.target.getAttribute('for');
+      const slide = document.querySelector(`#${slideId}-content`);
+      slides.forEach((slide) => slide.style.display = 'none');
+      slide.style.display = 'block';
+    }
+  });

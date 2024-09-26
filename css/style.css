@@ -6,37 +6,26 @@ html {
 
 
 body {
-  background-color: #3f3f3f;
+  background-color: #262626;
 }
 
 
 /* header dan navbar */
-
-header {
-  background-color: #6e6e6e;
-}
-
 .header {
-
+  background-color: #636363;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-
-
-
 
 .logo {
   padding: 10px;
   width: 100px;
   height: 100px;
   display: flex;
-  border-radius: 50%;
+  border-radius: 20%;
   object-fit: cover;
-
 }
-
 
 .navbar {
   font-weight: 700;
@@ -53,12 +42,22 @@ header {
 .navbar:hover {
   color: #004AAD;
   transition: 1s ease-in-out;
-  background-color: rgb(121, 10, 10);
+  background-color: rgb(255, 255, 255);
   border: 2px solid black;
-  border-radius: 40%;
+  border-radius: 10%;
 }
 
 /* header dan navbar end */
+.font-welcome {
+  padding: 2rem;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f0f0f0;
+}
+
+.font-welcome p span {
+  color: rgb(92, 220, 255);
+}
 
 /* content-slideshow */
 
@@ -66,74 +65,104 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('/assets/2.png');
+  background-image: url(/assets/2.jpeg);
 }
 
 .slideshow {
   display: flex;
   width: 100%;
-  transition: 2s;
+  padding: 20px;
+
 }
 
-
 .slideshow img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  border-radius: 5%;
-padding-bottom: 30px;
-
+  border: 2px solid #004AAD;
+  border-radius: 10%;
 }
 
 .container-slideshow {
-  width: 700px;
+  width: 90%;
   margin: auto;
-  overflow: hidden;
   object-fit: cover;
 }
 
 /* content-slideshow end */
 
-/* navigation slideshow */
+/* content 1 */
 
-@media screen and (max-width:800px) {
-
-  .header {
-    justify-content: space-evenly;
-    margin: 0 auto;
-
-  }
-
-
-  .nav-slide {
-    width: 90%;
-
-  }
-
-  .logo {
-    width: 70px;
-    height: 70px;
-  }
-
-  .navbar {
-    font-size: 80%;
-    font-weight: 700;
-
-  }
-
-  .section-logo {
-    padding-right: 2rem;
-  }
-
-  .form-container {
-    display: grid;
-
-  }
-
-
+.h1-content1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 20px;
 }
 
-/* navigation slideshow end */
+.content1-section {
+  padding: 3rem;
+}
 
+.content1-img {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content1-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.content1-section hr{
+ margin: 1rem;
+}
+
+.shadow1:hover {
+  box-shadow: -6px 2px 40px 6px rgba(246, 103, 226, 0.53);
+  -webkit-box-shadow: -6px 2px 40px 6px rgba(246, 103, 226, 0.53);
+  -moz-box-shadow: -6px 2px 40px 6px rgba(246, 103, 226, 0.53);
+  transition: .5s ease-in-out;
+}
+
+.shadow2:hover {
+  box-shadow: -6px 2px 40px 6px rgba(58, 144, 77, 0.53);
+  -webkit-box-shadow: -6px 2px 40px 6px rgba(58, 144, 77, 0.53);
+  -moz-box-shadow: -6px 2px 40px 6px rgba(58, 144, 77, 0.53);
+  transition: .5s ease-in-out;
+}
+
+.shadow3:hover {
+  box-shadow: -6px 2px 40px 6px rgba(147, 128, 45, 0.53);
+  -webkit-box-shadow: -6px 2px 40px 6px rgba(147, 128, 45, 0.53);
+  -moz-box-shadow: -6px 2px 40px 6px rgba(147, 128, 45, 0.53);
+  transition: .5s ease-in-out;
+}
+
+
+.content1-section div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.content1-section div details {
+  padding: 5px;
+  margin: auto;
+  color: #ccc;
+  background-color: #b98230;
+  border: solid black;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.content1-section div summary {
+  color: aqua;
+}
+
+/* content 1 end */
 
 /* form content */
 .form-container {
@@ -147,18 +176,14 @@ padding-bottom: 30px;
   justify-content: space-around;
 }
 
-
-.font-welcome {
-  font-size: 1.5rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
 .form {
   background-color: #f0f0f0;
   padding: 3rem;
   margin: auto;
+}
 
+.form div{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
 }
 
 label {
@@ -183,32 +208,85 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-
-@media (max-width: 600px) {
-
-  .header {
-    justify-content: space-evenly;
-    margin: 0 auto;
-
-  }
-
-  .form-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: grid;
-  }
-
-
-
-  input, textarea, select {
-    width: 90%;
-  }
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Form Header Styles */
+.form-header {
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  text-align: center;
+}
+
+.form-header h2 {
+  margin: 0;
+}
+
+/* Form Fields Styles */
+.form-fields {
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus, textarea:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Buttons Styles */
+.form-buttons {
+  padding: 20px;
+  text-align: center;
+}
+
+button[type="submit"], button[type="reset"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #18b127;
+  transition: 1s ease-in-out;
+}
+
+button[type="reset"]:hover {
+  background-color: rgb(242, 48, 48);
+  transition: 1s ease-in-out;
+}
+
+/* Info Box Styles */
+#info-box {
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  display: none;
+}
+
+#info-box p {
+  margin-bottom: 10px;
+}
 
 .info-box {
   background-color: #fff;
@@ -216,7 +294,6 @@ button[type="submit"] {
   border: 1px solid #ccc;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-
 }
 
 .info-box h2 {
@@ -227,4 +304,78 @@ button[type="submit"] {
   margin-bottom: 10px;
 }
 
-/* form content 1 end */
+
+/* Add this to the end of your CSS file */
+
+/* Tablet styles (screen width between 768px and 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* Adjust styles for tablets */
+  .header {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .navbar {
+    font-size: 1.2em;
+  }
+
+  .slideshow {
+    width: 80%;
+  }
+
+  .content1-section {
+    padding: 2rem;
+
+  }
+
+  .form-container {
+    max-width: 600px;
+  }
+}
+
+/* Phone styles (screen width up to 767px) */
+@media only screen and (max-width: 767px) {
+
+  /* Adjust styles for phones here */
+  .header {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .navbar {
+    font-size: 1em;
+  }
+
+  .slideshow {
+    width: 100%;
+  }
+
+  .content1-section {
+    padding: 1rem;
+  }
+
+    .content1-img img{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .h1-content1 p{
+      font-size: 15px;
+    }
+
+
+  .form-container {
+    max-width: 300px;
+  }
+}

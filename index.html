@@ -10,101 +10,137 @@
 
 <body>
 
-  <!-- bagian header -->
-  <header>
-
+  <header><!-- bagian header -->
     <nav class="header">
-     
-        <div>
-          <img src="assets/anim.jpg" alt="" class="logo">
-        </div>
-     
+      <div>
+        <img src="assets\735290_poster.jpg" alt="" class="logo">
+      </div>
 
       <section class="navigation_bar">
         <a href="#" class="navbar">HOME</a>
-        <a href="#" class="navbar">ABOUT US</a>
+        <a href="" class="navbar">ABOUT US</a>
         <a href="#" class="navbar">PORTOFOLIO</a>
         <a href="#" class="navbar">MASSAGE US</a>
       </section>
     </nav>
 
-  </header>
+  </header><!-- bagian header end -->
 
-  <!-- bagian header end -->
 
-  <!-- main content -->
 
-  <main>
+
+  <main> <!-- main content -->
+
+    <div class="font-welcome">
+      <h1>HI <span id="username">User</span> welcome to my website</h1>
+      <p>i hope you can <i>enjoy</i> my first website now... say my <span>Name!</span></p>
+    </div>
+
 
     <!-- slideshow content -->
-
     <section class="slide-content">
       <div class="container-slideshow">
-        <div class="slideshow" id="slideshow">
-          <img src="assets/4.jpeg" alt="image 1">
-          <img src="assets/2.png" alt="image 2">
-          <img src="assets/4.jpeg" alt="image 3">
-        </div>
+        <figure class="slideshow" id="slideshow">
+          <img src="assets/download.jpeg" alt="image 1">
+          <img src="assets/98ab46ef-d33f-478e-bf52-f034bd48e01f.jpeg" alt="image 2">
+          <img src="assets/1.jpeg" alt="image 3">
+        </figure>
       </div>
 
-
+      <hr>
       </div>
     </section>
-
     <!-- slideshow content end -->
 
-   
+
 
     <!-- content 1 -->
-    <div>
-    <h1>PORTOFOLIO</h1>
-
-
-    </div>
+    <section class="content1-section">
+      <div class="h1-content1">
+        <h1>ABOUT US</h1>
+        <p>here's something about me ;]</p>
+      </div>
+      <hr>
+      <figure class="content1-img">
+        <img src="/assets/Jesse season 5.jpeg" alt="about me" class="shadow1">
+        <img src="/assets/Walter White.jpeg" alt=" my hobbies" class="shadow2">
+        <img src="/assets/saul goodman.jpeg" alt=" my perpose" class="shadow3">
+      </figure>
+      <div>
+        <details>
+          <summary>ABOUT ME</summary>
+          <P> nama saya jelove daniel sumampouw umur saya 16 <br>tahun saya berasal dari sulawesi utara,kota manado.
+            <br> dan saya masih bersekolah saat ini saya masih <br>menduduki kelas 9 smk saya sedang menjalankan
+            kegiatan pkl
+          </P>
+        </details>
+        <details>
+          <summary>MY HOBBIES</summary>
+          <P>Saya suka bermain game game yang saya suka maini akhir-akhir <br>ini seperti battlefield V,Roblox,Valoran
+          </P>
+        </details>
+        <details>
+          <summary>MY perpose</summary>
+          <P> tujuan saya mengikuti fundamental course dari REVOU supaya <br> saya dapat mengembangkan pengetahuan saya
+            dan melatih kemampuan <br> saya pada bidang programing
+          </P>
+        </details>
+      </div>
+      <hr>
+    </section>
+    
     <!-- content 1 end -->
 
-     <!-- form content -->
+    <!-- form content -->
 
-     <section class="form">
-      <div class="font-welcome">
-        <h1>HI <span id="name">User</span> welcome to my website</h1>
-        <p>i hope you can enjoy my website</p>
+    <section class="form">
+      <div>
+        <h1>CONTACT US</h1>
+        <hr>
+        <p>Yo Yo Yo 1-4-8 3 to the 3 to the 6 to the 9. Representing the ABQ.
+          <BR> What up BIATCH! Leave at the tone.</p>
       </div>
+      <!-- Form Container -->
       <div class="form-container">
         <form id="myForm">
-          <div>
-            <label for="input-name">Nama Anda</label>
-            <input type="text" name="name" id="input-name">
+          <!-- Form Header -->
+          <div class="form-header">
+            <h2>INFORMATION</h2>
           </div>
 
-          <div>
-            <label for="input-date">Tanggal Lahir</label>
-            <input type="date" name="date" id="input-date">
-          </div>
+          <!-- Form Fields -->
+          <div class="form-fields">
+            <label for="name">Nama:</label>
+            <input type="text" id="input-name" name="name" required>
 
-          <div>
-            <label for="input-gender">Jenis Kelamin</label>
-            <select name="gender" id="input-gender">
-              <option value="laki-laki">Laki-laki</option>
-              <option value="perempuan">Perempuan</option>
+            <label for="date">Tanggal lahir:</label>
+            <input type="date" id="input-date" name="date" required>
+
+            <label for="gender">gender:</label>
+            <select id="input-gender" name="gender" required>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
             </select>
+
+            <label for="message">Tinggalkan pesan:</label>
+            <textarea id="input-message" name="message" required></textarea>
           </div>
 
-          <div>
-            <label for="input-message">Pesan Anda</label>
-            <textarea name="message" id="input-message" placeholder="Kirim Pesan" rows="5" cols="30"></textarea>
+          <!-- Form Buttons -->
+          <div class="form-buttons">
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
           </div>
-          <button id="submit" class="button">Submit</button>
+
+          <!-- Info Box -->
+          <div id="info-box" style="display: none;">
+            <p id="info-name"></p>
+            <p id="info-date"></p>
+            <p id="info-gender"></p>
+            <p id="info-message"></p>
+          </div>
         </form>
-
-        <div class="info-box">
-          <h2>Information:</h2>
-          <p id="info-name"></p>
-          <p id="info-date"></p>
-          <p id="info-gender"></p>
-          <p id="info-message"></p>
-          <button id="reset">Reset</button>
-        </div>
       </div>
     </section>
     <!-- form content end -->

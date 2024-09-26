@@ -30,6 +30,7 @@ function nextImage() {
 // Start the slideshow
 setInterval(nextImage, interval);
 
+// form section
 const form = document.getElementById('myForm');
 const nameInput = document.getElementById('input-name');
 const dateInput = document.getElementById('input-date');
